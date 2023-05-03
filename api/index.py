@@ -108,10 +108,10 @@ def make_svg(spin, scan, theme, rainbow):
         image = load_image_base64(item["album"]["images"][1]["url"])
 
     if scan and scan != "false" and scan != "0":
-        bar_count = 10
+        bar_count = 20
         scan_code = get_scan_code(item["uri"])
     else:
-        bar_count = 22
+        bar_count = 12
         scan_code = None
 
     return render_template(
