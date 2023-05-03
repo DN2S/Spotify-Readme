@@ -111,7 +111,7 @@ def make_svg(spin, scan, theme, rainbow):
         bar_count = 10
         scan_code = get_scan_code(item["uri"])
     else:
-        bar_count = 12
+        bar_count = 22
         scan_code = None
 
     return render_template(
