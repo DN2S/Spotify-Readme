@@ -84,7 +84,7 @@
                     overflow: hidden;
                     max-width: 260px;
                     {% if not scan_code %}
-                        margin-left: 10px;
+                        margin-left: 0px;
                     {% endif %}
                     {% if theme == 'dark' %}
                         color: aliceblue;
@@ -157,7 +157,7 @@
                             <div class="top">
                                 <h1>{{song}}</h1>
                             </div>
-                            <p>{{artist}} ({{album}})</p>
+                            <p>by {{artist}} on {{album}}</p>
                         </div>
                         <div class="bar-container">
                             {{bars|safe}}
