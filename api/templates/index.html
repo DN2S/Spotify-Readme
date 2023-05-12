@@ -151,7 +151,9 @@
                     <img class="scan-code" src="data:image/png;base64, {{scan_code}}" alt="Scan Code" />
                 {% endif %}
                 <aside>
-                    <img class="cover" src="data:image/png;base64, {{image}}" alt="Cover Image" />
+                    <a href="{{album_url}}">
+                      <img class="cover" src="data:image/png;base64, {{image}}" alt="Cover Image" />
+                    </a>
                     <section>
                         <div class="info">
                             <div class="top">
