@@ -149,6 +149,7 @@ def catch_all(path):
             request.args.get("scan"),
             request.args.get("theme"),
             request.args.get("rainbow"),
+            request.args.get("album_uri"),
         ),
         mimetype="image/svg+xml",
     )
