@@ -106,6 +106,8 @@ def make_svg(spin, scan, theme, rainbow):
         image = B64_PLACEHOLDER_IMAGE
     else:
         image = load_image_base64(item["album"]["images"][1]["url"])
+        
+    album_url = item["album"]["external_urls"]["spotify"]
 
     if scan and scan != "false" and scan != "0":
         bar_count = 10
