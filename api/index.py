@@ -126,6 +126,7 @@ def make_svg(spin, scan, theme, rainbow):
             "theme": theme,
             "spin": spin,
             "logo": B64_SPOTIFY_LOGO,
+            "album_url": album_url,
         },
     )
 
