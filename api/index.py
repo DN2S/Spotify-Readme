@@ -120,6 +120,7 @@ def make_svg(spin, scan, theme, rainbow):
             "bars": generate_bars(bar_count, rainbow),
             "artist": item["artists"][0]["name"].replace("&", "&amp;"),
             "song": item["name"].replace("&", "&amp;"),
+            "album": item["album"]["name"].replace("&", "&amp;"),
             "image": image,
             "scan_code": scan_code if scan_code != "" else B64_PLACEHOLDER_SCAN_CODE,
             "theme": theme,
