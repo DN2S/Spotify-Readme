@@ -93,7 +93,7 @@ def get_scan_code(spotify_uri):
     )
 
 
-def make_svg(spin, scan, theme, rainbow):
+def make_svg(spin, scan, theme, rainbow, album_uri):
     """Render the HTML template with variables"""
     data = spotify_request("me/player/currently-playing")
     if data:
