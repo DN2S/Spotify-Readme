@@ -108,6 +108,8 @@ def make_svg(spin, scan, theme, rainbow):
         image = load_image_base64(item["album"]["images"][1]["url"])
         
     album_url = item["album"]["external_urls"]["spotify"]
+    album_uri = item["album"]["uri"]
+    track_uri = item["uri"]
 
     if scan and scan != "false" and scan != "0":
         bar_count = 10
@@ -128,7 +130,9 @@ def make_svg(spin, scan, theme, rainbow):
             "theme": theme,
             "spin": spin,
             "logo": B64_SPOTIFY_LOGO,
-            "album_url": album_url
+            "album_url": album_url,
+            "album_uri": album_uri,
+            "track_uri": track_uri
         },
     )
 
