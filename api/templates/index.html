@@ -87,7 +87,7 @@
                         margin-left: 0px;
                     {% endif %}
                     {% if theme == 'dark' %}
-                        color: #EDEBE3;
+                        color: #ECEFF4;
                     {% else %}
                         color: #131921;
                     {% endif %}
@@ -103,7 +103,7 @@
                     overflow: hidden;
                     max-width: 260px;
                     {% if theme == 'dark' %}
-                        color: rgba(247, 248, 248, calc(2/3));
+                        color: #D8DEE9;
                     {% else %}
                         color: rgba(22, 27, 34, calc(2/3));
                     {% endif %}
@@ -159,7 +159,7 @@
                             <div class="top">
                                 <h1>{{song}}</h1>
                             </div>
-                            <p style="color: rgba(247, 248, 248, 0.5);">by <span style="color:rgba(247, 248, 248, 0.7);">{{artist}}</span> on <span style="color:rgba(247, 248, 248, 0.7);">{{album}}</span></p>
+                            <p style="color: #D8DEE9;">by <span style="color:rgba(247, 248, 248, 0.7);">{{artist}}</span> on <span style="color:rgba(247, 248, 248, 0.7);">{{album}}</span></p>
                         </div>
                         <div class="bar-container">
                             {{bars|safe}}
